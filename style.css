@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Macondo&family=Montserrat:ital,wght@1,200&family=Oleo+Script+Swash+Caps:wght@700&family=Roboto:ital,wght@1,300&family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Kanit:ital,wght@1,300&family=Macondo&family=Montserrat:ital,wght@1,200&family=Oleo+Script+Swash+Caps:wght@700&family=Roboto:ital,wght@1,300&family=Tapestry&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +7,10 @@
 }
 body{
     background-color: #29323D;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background: url(https://www.toptal.com/designers/subtlepatterns/uploads/email-pattern.png);
 }
 
 /* Nav */
@@ -17,32 +21,32 @@ body{
 }
 
 .header {
-    background: url(./img/peakpx\ \(5\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background: url(./img/peakpx\ \(5\).jpg); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
     width: 100%;
     height: 100px;
     padding: 0 20px;
-    border-radius: 0 0 40px 40px;
-    box-shadow: 0px 11px 20px 0px rgba(0,0,0,1);
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
 }
 
 
 .nav-container{
     display: flex;
-    height: 100%;
-    width: 90%;
-    margin: 0 auto;
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
     
 }
 
 .nav-menu {
     display: grid;
     grid-auto-flow: column;
-    gap:3rem;
+    gap:3em;
 }
 
 .nav-input:checked + .nav-menu {
@@ -65,7 +69,7 @@ body{
 .nav-item::after{
     content:"";
     display: block;
-    background-color: #fff;
+    background-color: black;
     width: 90%;
     margin-top: 3px;
     height: 3px;
@@ -79,6 +83,13 @@ body{
 
 /* PRIMERA SECTION */
 
+
+.padre{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .section1{
     display: flex;
     flex-direction: row-reverse;
@@ -86,13 +97,14 @@ body{
     align-content: center;
     align-items: center;
     margin-top: 100px;
-    box-shadow: 3px 5px 17px 7px #000000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 600px;
     margin-left: 10px;
     margin-right: 15px;
     margin-top: 170px;
     border-radius: 50px;
     background-color: #fff;
+    width: 70%;
 }
 
 
@@ -104,27 +116,28 @@ body{
 }
 
 .texto{
-    background-color: #5A6566;
+    background-color: #fff;
     max-width:800px;
     font-weight: bold;
     border-radius: 30px;
     margin-top: 50px;
-    box-shadow: 3px 5px 17px 7px #000000;
+    
 }
 
-.texto h1, h2{
+.texto h1{
     font-family: macondo;
     text-align: center;
-    color:#AAB6B7;
+    color: #000000;
     margin-bottom: 20px;
     font-size: 50px;
 }
 
-.texto p, .texto2 {
+.texto p {
     margin: 0 auto;
     text-align: center;
-    font-family: montserrat;
-    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+
 }
 
 .buttons {
@@ -132,20 +145,21 @@ body{
     text-align: center;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 80px;
     margin-top: 50px;
     font-family: macondo;
     font-weight: bold;
+    
 }
 
 .boton1 {
-    background-color: #29323D;
+    background-color:#5A6566;
     margin-bottom: 20px;
     font-size: 25px;
     padding: 10px;
     border-radius: 10px;
-    color: #AAB6B7;
-    box-shadow:0px 11px 20px 0px rgba(0,0,0,1);
+    color: #fff;
+    box-shadow:5px 5px 0px 0px #000000
 }
 
 
@@ -155,9 +169,9 @@ body{
     font-size: 25px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow:0px 11px 20px 0px rgba(0,0,0,1);
-    border: 2px solid #29323D;
-    color: #29323D;
+    border: 3px solid black;
+    color: #5A6566;
+    box-shadow:5px 5px 0px 0px #000000
     }
 
 
@@ -172,47 +186,84 @@ body{
     margin-top: 150px;
 }
 .info{
-    background-color: #5A6566;
-    max-width: 60%;
+    background-color: #fff;
+    max-width: 90%;
     /* margin-top: 300px; */
     border-radius: 20px;
-    box-shadow: 3px 5px 17px 7px #000000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.info h2{
+    text-align: center;
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-family: 'Kanit', sans-serif;
+}
+
 .texto2 {
-    font-weight:lighter
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    padding: 0 40px 30px 40px;
 }
+
+
+
 
 /* FOOTER */
 
 .container-footer {
-    background-color: #5A6566;
-    margin: 70px;
-    padding: 70px;
+    /* margin: 70px;
+    padding: 70px; */
     border-radius: 20px;
-    color: #AAB6B7;
+    color: black;
 }
 
 .footer {
+    /* background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background: url(img/embossed-diamond.png); */
     background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.24' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    padding: 3rem;
+    margin-top: 200px;
+    /* padding: 2rem;
+    height: 600px */
+}
+.logo-narela {
+    border-radius: 10px;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
 }
 
 .imgfooter {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 30px;
-    background-color: #fff;
-    box-shadow: 3px 5px 17px 7px #000000;
-    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* /* margin-bottom: 30px; */ 
 }
 
-.footer h3 {
-    margin-bottom: 10px;
+.container-footer h3 {
+    font-weight:bolder;
+    margin-bottom: 15px;
+    color:#5A6566
+}
+    
+
+.container-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:400px;
 }
 
 .contacto {
@@ -224,40 +275,40 @@ body{
 }
 
 .contacto a {
-    color: black;
+    
+    color: white;
     font-size: bold;
-    text-decoration: underline;
+    text-decoration: underline #fff;
 }
 .contacto p {
-    color: #000000;
+    color: white;
     margin-top: 13px;
 }
 
 .redes {
+    margin-top: 40px;
     text-align: center;
-    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 10px;
     font-weight:bold;
     font-size:large;
 }
 .redes a { 
-    color: black;
+    color: white;
     font-size: bold;
-    text-decoration: underline;
+    text-decoration: underline #fff;
 }
 
 .masinfo {
     text-align: center;
-    margin-top: 40px;
     font-weight:bold;
     font-size:large;
 }
 .masinfo a {
-    color: black;
+    color: white;
     font-size: bold;
-    text-decoration: underline;
+    text-decoration: underline #fff;
 }
 
 .hechopor {
@@ -266,17 +317,21 @@ body{
     margin-top: 40px;
     font-weight:bold;
     font-size:x-large;
-    color: #29323D;
+    color: white;
 
 }
 
 /* MEDIA */
 
 @media (max-width: 700px){
+
     .conteiner {
         width: 100vw;
         height: 100vh;
     } 
+
+    /* NAV */
+
     .nav-label {
         display: block;
         cursor: pointer;
@@ -293,15 +348,17 @@ body{
         flex-direction: column;
         align-items: center;
         clip-path: circle(0 at center);
-        transition: clip-path 1s ease-in-out;
+        transition: clip-path 0.6s ease-in-out;
     }
     .nav-input:checked + .nav-menu {
         clip-path: circle(100% at center);
     }
     .nav-item {
-        color: beige;
+        color: #fff;
     }
    
+    /* SECTION1 */
+
     .section1 {
         margin-top: 100px;
         flex-direction: column-reverse;
@@ -335,25 +392,25 @@ body{
         align-items: center;
         align-content: center;
         max-width: 70%;
-        max-height: 100%;
+        height: 250px;
         margin: 0 auto;
     }
+
+    /* SECTION2 */
 
     .info {
         max-width: 95%;
         min-height: 95%;
     }
+    .info h2 {
+        font-size: 40px;
+    }
+
+    /* FOOTER */
 
     .container-footer {
-        max-width: 100%;
-        min-width: 20%;
-    }
-    .logo-narela {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        max-width: 100%;
+        max-width: 50%;
+        min-width: 50%;
     }
     
     .container-contacto {
@@ -361,12 +418,25 @@ body{
         flex-direction: column;
         align-items: center;
         align-content: center;
+        gap:10px
+    }
+    .contacto {
+        margin-top: 10px;
     }
     .contacto p {
         font-size: 20px;
     }
-    .hechopor {
+    .redes {
+        margin-top: 3px;
+    }
+    .masinfo {
+        margin-top: 50px;
+    }
+    .container-footer h3 {
         font-size: 20px;
+    }
+    .hechopor {
+        font-size: 22px;
     }
 }
    
