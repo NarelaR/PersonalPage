@@ -234,6 +234,7 @@ body{
     /* padding: 2rem;
     height: 600px */
 }
+
 .logo-narela {
     border-radius: 10px;
     max-width: 200px;
@@ -318,7 +319,7 @@ body{
     font-weight:bold;
     font-size:x-large;
     color: white;
-
+    padding: 40px;
 }
 
 /* MEDIA */
